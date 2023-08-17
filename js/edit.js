@@ -8,7 +8,7 @@ let myToggleButton = document.getElementById("myToggleButton");
 let myForm = document.getElementById("form");
 let updateProduct = document.getElementById("update");
 let added = document.getElementById("added");
-let darkadd = JSON.parse(localStorage.getItem("modeedit"));
+let darkadd = localStorage.getItem("modeedit");
 if (darkadd) {
   pName.classList.add("dark");
   pCategory.classList.add("dark");
