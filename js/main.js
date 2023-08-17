@@ -117,11 +117,8 @@ test.addEventListener("click", function (event) {
     productId = target.getAttribute("data-id");
     localStorage.setItem("productIdToUpdate", productId);
 
-    open(
-      `/edit.html?id=${productId}`,
-      "_blank",
-      "width=500 ,height=500,top=100,left=200"
-    );
+    window.location.href = `edit.html?id=${productId}`;
+
   }
 });
 
