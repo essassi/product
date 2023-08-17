@@ -9,7 +9,7 @@ let myForm = document.getElementById("form");
 let addProduct = document.getElementById("add-product");
 let added = document.getElementById("added");
 
-let darkadd = JSON.parse(localStorage.getItem("modeadd"));
+let darkadd = localStorage.getItem("modeadd");
 if (darkadd) {
   pName.classList.add("dark");
   pCategory.classList.add("dark");
