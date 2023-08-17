@@ -122,7 +122,7 @@ test.addEventListener("click", function (event) {
   }
 });
 
-let dark = JSON.parse(localStorage.getItem("mode"));
+let dark = localStorage.getItem("mode");
 
 if (dark) {
   cardContent.forEach((content) => content.classList.add("dark"));
