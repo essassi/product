@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product</title>
+    <link rel="stylesheet" href="css/addstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="togle">
+        <button class="toggle-button" id="myToggleButton"></button>
+
+    </div>
+    <h1 class="title-add">Add New Product</h1>
+    <h1 id="added"></h1>
+
+    <form action="" class="form" id="form">
+        <div class="prodcut-name">
+            <label for="p-name" class="label">Product name</label>
+            <input type="text" placeholder="Product name" name="name" id="p-name" class="p-name" required>
+        </div>
+        <div class="prodcut-category">
+            <label for="prodcut-category" class="label">Category</label>
+            <input type="text" placeholder="Category" name="category" id="p-category" class="p-category" required>
+        </div>
+        <div class="prodcut-price">
+            <label for="p-price" class="label">Price($)</label>
+            <input type="number" name="price" placeholder="Price($)" id="p-price" class="p-price" required>
+        </div>
+        <div class="prodcut-description">
+            <label for="p-description" class="label">Description</label>
+            <textarea name="description" id="p-description" cols="30" rows="10"></textarea>
+        </div>
+        <div class="prodcut-image">
+            <label for="p-image" class="label">Product image</label>
+            <input type="file" required placeholder="Product image" id="p-image" name="image" class="p-image"
+                accept=".jpg , .png">
+        </div>
+
+        <button class="add-product" id="add-product">Add product</button>
+    </form>
+
+    <script src="js/add.js"></script>
+</body>
+
+</html>
