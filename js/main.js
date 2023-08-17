@@ -25,7 +25,7 @@ let added = document.getElementById("added");
 const loadingContainer = document.getElementById("loading");
 
 addBtn.addEventListener("click", () => {
-  open("/add.html", "_blank", "width=500 ,height=500,top=100,left=200");
+ window.location.href = "add.html";
 });
 function showLoadingAnimation() {
   loadingContainer.style.display = "flex"; // Show loading animation
